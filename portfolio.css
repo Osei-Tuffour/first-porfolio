@@ -40,31 +40,45 @@ nav ul{
     display: flex;
     list-style: none;
     color: white;
-    font-size: 18px;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: start;
+    width: fit-content;
+    gap: 20px;
 
 }
 nav ul li{
-    padding: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
-li a{
+nav ul li a{
     text-decoration: none;
     color:black;
     font-weight: bold;
+    padding: 4px 6px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 li a:hover{
     color: #f33e11;
-    background-color: white;
     padding: 4px 6px;
+    background-color: white;
     border-radius: 5px;
-    transition: all;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .content{
-    width: 80%; 
+    width: 80%;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
@@ -146,7 +160,7 @@ li a{
     padding: 20px;
 
 }
-    
+
 }
 
 @media (max-width:500px){
@@ -176,7 +190,7 @@ nav ul{
     width: 80%;
 
 }
-} 
+}
 @media (max-width:369px){
     .contain{
     display: flex;
@@ -206,7 +220,7 @@ nav ul{
 
 }
 .content{
-    width: 90%; 
+    width: 90%;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
@@ -221,7 +235,7 @@ nav ul{
     row-gap: 10px;
     width: auto;
     padding: 7px;
-       
+
 
 }
 }
