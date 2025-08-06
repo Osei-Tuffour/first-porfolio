@@ -50,6 +50,7 @@ These are the pages We will be making
                 -Candidate/Aspirants/Contestants
 
     -index.html/entryPoint
+    -style.css
     -.htaccess
     -.htpassword
     -.env
