@@ -1,0 +1,207 @@
+/* Custom styles for Voting System */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
+.table {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Custom components */
+.voting-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.candidate-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.candidate-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.progress-bar {
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* Admin panel styles */
+.admin-sidebar {
+    background-color: var(--dark-color);
+    color: white;
+    min-height: 100vh;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.admin-content {
+    padding: 2rem;
+}
+
+/* Login form styles */
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Voting system styles */
+.voting-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vote-button {
+    transition: all 0.3s ease;
+}
+
+.vote-button:hover {
+    transform: scale(1.05);
+}
+
+.vote-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Results page styles */
+.results-summary {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    margin: 2rem 0;
+}
+
+/* Responsive utilities */
+@media (max-width: 576px) {
+    .login-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .voting-container {
+        padding: 1rem;
+    }
+}
